@@ -1,2 +1,2 @@
-from .auth import routes
-from .doc_upload import routes
+from apps.auth import routes
+from apps.doc_upload import routes

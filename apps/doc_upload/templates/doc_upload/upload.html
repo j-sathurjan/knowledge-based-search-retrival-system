@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Document</title>
+</head>
+<body>
+    <h2>Upload a Document</h2>
+    <p>{{message}}</p>
+    <form action="{{url_for('upload_bp.upload_document')}}" method="POST" enctype="multipart/form-data">
+        <label for="report_name">Name of the Report:</label>
+        <input type="text" id="report_name" name="report_name" required><br>
+
+        <label for="report_type">Type of Report:</label>
+        <select id="report_type" name="report_type" required>
+            <option value="Insurance">Insurance</option>
+            <option value="Medical">Medical</option>
+            <option value="Legal">Legal Document</option>
+        </select><br>
+
+        <label for="additional_notes">Additional Notes:</label><br>
+        <textarea id="additional_notes" name="additional_notes"></textarea><br>
+
+        <label for="file">Choose PDF file:</label>
+        <input type="file" id="file" name="file" accept="application/pdf" required><br><br>
+
+        <input type="submit" value="Upload">
+    </form>
+</body>
+</html>

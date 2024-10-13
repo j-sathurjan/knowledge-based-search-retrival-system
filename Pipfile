@@ -6,6 +6,10 @@ name = "pypi"
 [packages]
 flask = "*"
 requests = "*"
+mysql = "*"
+mysqlclient = "*"
+mysql-connector-python = "*"
+pypdf2 = "*"
 
 [dev-packages]
 
